@@ -46,7 +46,7 @@ abstract class AbstractException extends \Exception
      *
      * @return mixed
      */
-    public static function factory($type = '', $message = '', $code = 0, Exception $previous = null)
+    public static function factory($type = '', $message = '', $code = 0, ?Exception $previous = null)
     {
         $classname = 'Novutec\DomainParser\Exception\\'.ucfirst($type).'Exception';
         if (class_exists($classname)) {
