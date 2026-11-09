@@ -70,6 +70,8 @@ class Idna
     protected $_damp = 700;
     protected $_initial_bias = 72;
     protected $_initial_n = 0x80;
+    protected $slast;
+
     protected $_sbase = 0xAC00;
     protected $_lbase = 0x1100;
     protected $_vbase = 0x1161;
